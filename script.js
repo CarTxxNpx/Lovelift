@@ -90,18 +90,31 @@ function showFinalResult(score, currentStage) {
     document.getElementById('additionalForm1').style.display = 'none';
     document.getElementById('additionalForm2').style.display = 'none';
 
+    // let resultMessage = '';
+    // if (existingUser.score <= 8 ) {
+    //     resultMessage = 'สุขภาพจิตของคุณดูเหมือนจะปกติ';
+    // } else if (existingUser.score <= 15) {
+    //     resultMessage = 'คุณอาจมีปัญหาสุขภาพจิตเล็กน้อย';
+    // } else {
+    //     resultMessage = 'คุณควรปรึกษาผู้เชี่ยวชาญด้านสุขภาพจิต';
+    // }
+    // แก้
     let resultMessage = '';
-    if (existingUser.score <= 8) {
+    if (existingUser.score <= 8 ) {
         resultMessage = 'สุขภาพจิตของคุณดูเหมือนจะปกติ';
-    } else if (existingUser.score <= 15) {
-        resultMessage = 'คุณอาจมีปัญหาสุขภาพจิตเล็กน้อย';
-    } else {
-        resultMessage = 'คุณควรปรึกษาผู้เชี่ยวชาญด้านสุขภาพจิต';
+        const resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+        resultDiv.innerHTML = `<p>คะแนนรวม: ${existingUser.score}</p><p>${resultMessage}</p>`;
+    } else if (existingUser.score <= 70) {
+        resultMessage = 'ขอให้โลกใบนี้ใจดีกับคุณ Love Lift ขอโอบกอดคุณ';
+        const resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+        resultDiv.innerHTML = `<p>${resultMessage}</p>`;
     }
 
-    const resultDiv = document.getElementById('result');
-    resultDiv.style.display = 'block';
-    resultDiv.innerHTML = `<p>คะแนนรวม: ${existingUser.score}</p><p>${resultMessage}</p>`;
+    // const resultDiv = document.getElementById('result');
+    // resultDiv.style.display = 'block';
+    // resultDiv.innerHTML = `<p>คะแนนรวม: ${existingUser.score}</p><p>${resultMessage}</p>`;
 }
 
 //  window.onload = function() {
