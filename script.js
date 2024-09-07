@@ -109,6 +109,7 @@ function showFinalResult(score, currentStage) {
         resultMessage = 'ขอให้โลกใบนี้ใจดีกับคุณ Love Lift ขอโอบกอดคุณ';
         const resultDiv = document.getElementById('result');
         resultDiv.style.display = 'block';
+        resultDiv.className = 'alert alert-light mt-3'; // ใช้คลาสที่เหมาะสม
         resultDiv.innerHTML = `<p>${resultMessage}</p>`;
     }
 
