@@ -5,20 +5,28 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
+    background-image: <img src="URL_ของภาพ">;
 }
+
 
 /* ใช้พื้นหลังสีชมพูอ่อนตามที่คุณต้องการ */
 body {
-    background-color: #f8bbd0;
+    background-color: ;
     justify-content: center;
     align-items: center;
     height: 100%;
     margin: 20px;
+    background-image: url('https://i.pinimg.com/564x/0d/7c/90/0d7c9055a92021060c27332593f0cb81.jpg');
+    /* background-size: cover; ทำให้ภาพครอบคลุมพื้นที่ทั้งหมด */
+    background-position: center; /* จัดตำแหน่งภาพให้อยู่ตรงกลาง */
+    /* background-repeat: no-repeat; ป้องกันการทำซ้ำของภาพ */
+    margin: 0;
+    height: 100vh; /*ให้สูง 100% ของ viewport height
 }
 
 /* ปรับปรุงคอนเทนเนอร์ */
 .container {
-    background-image: linear-gradient(to right,#e7e9fd,#b3e5fc,violet);
+    background-image: linear-gradient(to right,#f8bbd0,#b3e5fc,#f8bbd0);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
