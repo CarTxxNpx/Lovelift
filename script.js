@@ -103,3 +103,16 @@ function showFinalResult(score, currentStage) {
     resultDiv.style.display = 'block';
     resultDiv.innerHTML = `<p>คะแนนรวม: ${existingUser.score}</p><p>${resultMessage}</p>`;
 }
+
+//  window.onload = function() {
+//      alert("///คำแนะนำในการทดสอบต่อไปนี้เป็นปัญหาที่ อาจเกิดขึ้นกับคุณ โปรดอ่านแต่ละข้ออย่างรอบคอบ หลังจากที่อ่านแล้วให้เลือกคำตอบที่ตรงกับตัวของคุณ มากที่สุด ว่าอาการหรือความรู้สึกนี้ได้รบกวนคุณมาก น้อยเพียงใดในช่วงระยะเวลา 2-4 สัปดาห์ ที่ผ่านมา");
+// };
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var alert = document.getElementById('infoAlert');
+        if (alert) {
+            var bsAlert = new bootstrap.Alert(alert);
+            bsAlert.show();
+        }
+});
