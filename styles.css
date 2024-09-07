@@ -57,6 +57,9 @@ form {
     font-weight: 700;
     color: #333;
     font-size: 18px;
+    border-radius: 25px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.35);
+    padding: 8px;
 }
 
 /* ปรับปรุงปุ่ม */
@@ -93,9 +96,7 @@ h2 {
 .form-check {
     margin-left: 2rem;
     margin-bottom: 1.5rem;
-    border-radius: 25px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    padding: 8px;
+
 }
 h1 {
     text-align: center;
